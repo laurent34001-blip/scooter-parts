@@ -103,7 +103,7 @@ export default function ProductDetailPage() {
                 </p>
               )}
 
-              {selectedVariant && (
+              {selectedVariant && selectedVariant.prices && selectedVariant.prices[0] && (
                 <div className="mb-6">
                   <p className="text-3xl font-bold text-blue-600">
                     {(selectedVariant.prices[0].amount / 100).toFixed(2)} €

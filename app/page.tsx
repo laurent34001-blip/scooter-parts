@@ -77,7 +77,7 @@ export default async function Home() {
                       {product.description}
                     </p>
                   )}
-                  {product.variants && product.variants[0] && (
+                  {product.variants && product.variants[0] && product.variants[0].prices && product.variants[0].prices[0] && (
                     <p className="text-blue-600 font-bold">
                       {(product.variants[0].prices[0].amount / 100).toFixed(2)} €
                     </p>
