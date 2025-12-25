@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { medusaClient } from "@/lib/medusa-client";
+import Hero from "@/components/Hero";
 
 export default async function Home() {
   let products: any[] = [];
@@ -17,22 +18,7 @@ export default async function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Bienvenue sur Trottipieces
-          </h1>
-          <p className="text-xl md:text-2xl mb-8">
-            Votre spécialiste en pièces détachées pour trottinettes électriques
-          </p>
-          <Link
-            href="/products"
-            className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-          >
-            Voir tous les produits
-          </Link>
-        </div>
-      </section>
+      <Hero />
 
       {/* Products Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
