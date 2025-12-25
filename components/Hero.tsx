@@ -47,35 +47,11 @@ export default function Hero() {
 
           {/* Right Content - Animated illustration */}
           <div className={`hidden md:flex justify-center items-center transition-all duration-1000 transform ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            <div className="relative w-full h-96">
-              {/* Main scooter shape using CSS */}
-              <svg
-                viewBox="0 0 300 300"
-                className="w-full h-full animate-bounce"
-                style={{ animationDuration: '3s' }}
-              >
-                {/* Wheels */}
-                <circle cx="80" cy="220" r="35" fill="none" stroke="white" strokeWidth="3" />
-                <circle cx="80" cy="220" r="28" fill="none" stroke="white" strokeWidth="1.5" opacity="0.5" />
-                
-                <circle cx="220" cy="220" r="35" fill="none" stroke="white" strokeWidth="3" />
-                <circle cx="220" cy="220" r="28" fill="none" stroke="white" strokeWidth="1.5" opacity="0.5" />
-
-                {/* Platform */}
-                <rect x="70" y="190" width="160" height="20" rx="5" fill="white" opacity="0.9" />
-                
-                {/* Steering column */}
-                <rect x="145" y="80" width="10" height="115" rx="5" fill="white" opacity="0.8" />
-                
-                {/* Handlebar */}
-                <rect x="100" y="70" width="100" height="8" rx="4" fill="white" opacity="0.8" />
-                <circle cx="110" cy="74" r="6" fill="white" opacity="0.7" />
-                <circle cx="190" cy="74" r="6" fill="white" opacity="0.7" />
-
-                {/* Battery indicator */}
-                <rect x="110" y="140" width="80" height="30" rx="5" fill="none" stroke="white" strokeWidth="2" opacity="0.7" />
-                <rect x="115" y="145" width="70" height="20" rx="3" fill="white" opacity="0.5" />
-              </svg>
+            <div className="relative w-full h-96 flex items-center justify-center">
+              {/* Scooter Emoji */}
+              <div className="text-9xl animate-bounce" style={{ animationDuration: '3s' }}>
+                🛴
+              </div>
 
               {/* Floating elements */}
               <div className="absolute top-10 right-10 animate-float">

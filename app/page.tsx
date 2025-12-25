@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { medusaClient } from "@/lib/medusa-client";
 import Hero from "@/components/Hero";
+import CategoriesSection from "@/components/CategoriesSection";
+import BrandsSection from "@/components/BrandsSection";
 
 export default async function Home() {
   let products: any[] = [];
@@ -19,6 +21,12 @@ export default async function Home() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <Hero />
+
+      {/* Categories Section */}
+      <CategoriesSection />
+
+      {/* Brands Section */}
+      <BrandsSection />
 
       {/* Products Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

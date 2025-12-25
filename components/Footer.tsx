@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Trottipieces. Tous droits réservés.
+            © {new Date().getFullYear()} Trottipièces - Détenu par MAN. Tous droits réservés.
           </p>
         </div>
       </div>

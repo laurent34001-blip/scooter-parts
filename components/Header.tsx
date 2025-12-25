@@ -72,6 +72,9 @@ export default function Header() {
       <nav className="hidden md:block shadow-md" style={{ backgroundColor: '#00B089' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-1 overflow-x-auto">
+            <Link href="/" className="px-4 py-3 text-white font-medium hover:opacity-80 transition-colors whitespace-nowrap">
+              🏠 Accueil
+            </Link>
             <Link href="/products?category=pieces" className="px-4 py-3 text-white font-medium hover:opacity-80 transition-colors whitespace-nowrap">
               Pièces détachées
             </Link>
